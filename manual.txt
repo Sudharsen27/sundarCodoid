@@ -1,83 +1,204 @@
-1."Write a Bug Report for a bug in the Whatsapp mobile application that is preventing users from sending video files in group chats.
- (Note: Consider that this workflow is working fine in private chat)"
-Test Case: Sending Video Files in Group Chats
+1.Write a Bug Report for a bug in the Whatsapp mobile application that is preventing users from sending video files in group chats.
 
-Test Objective: To verify if users can send video files in group chats without any issues.
-
-Pre-conditions:
-
-The user must have an active account on WhatsApp
-The user must be a member of a group chat
-The user must have access to a video file on their device
-Steps:
-
-Launch the WhatsApp mobile application.
-Navigate to the group chat where you want to send the video file.
-Tap on the attachment icon to open the options for attaching a file.
-Select the video file from the device storage.
-Tap on the send button to send the video file.
-Expected Results:
-
-The video file should be uploaded and sent successfully to the group chat.
-All members of the group chat should be able to view the video file.
-The video file should play without any issues.
-Actual Results:
-
-The video file is not uploaded and the user is unable to send it to the group chat.
-An error message is displayed on the screen indicating that the upload has failed.
-Test Result:
-
-Fail
-Severity: High
-
-Priority: High
-
+Status: New/Open
+Severity:
+This is a critical severity.
+Priority:
+This is a high priority.
 Test Environment:
+This issue was observed on Google Chrome
+Detailed Description:
+        Open WhatsApp and go to a group chat.
+        Tap on the attachment icon to access the attachment menu.
+        Select the "Gallery" option.
+        Choose a video file to send and tap on the "Send" button.
+Expected Results:
+        The video file should be successfully sent to the group chat without any errors.
+Actual Results:
+        After tapping on the "Send" button, the video file fails to send and displays an error message. The message states "Failed to send video. Please try again later."
 
-WhatsApp Mobile Application version X.X.X
-Android/iOS version X.X
-Notes:
+2. Write a bug report for a bug in the login page that the submit button is not working.
 
-The same workflow works fine in private chat, but not in group chats.
-The issue persists even after multiple attempts.
-The issue has been reproduced on different devices and operating systems.
+Status: New/Open
+Severity:
+This is a critical severity.
+Priority:
+This is a high priority.
+Test Environment:
+This issue was observed on Google Chrome.
+Detailed Description:
+Go to the login page.
+Enter valid login credentials.
+Click on the submit button.
+Expected Result:
+The system should log the user into the account and redirect them to the dashboard page.
+Actual Result:
+Clicking on the submit button does not initiate any action and the user remains on the login page.
+
+3. Write a bug report for any scenario of your own in wats app
+
+ Status: New/Open
+Severity:
+This is a critical severity.
+Priority:
+This is a high priority.
+Test Environment:
+This issue was observed on Google Chrome
+Detailed Description:
+Open WhatsApp and go to the Chats tab.
+Tap on the "New Group" button.
+Select contacts to add to the group and tap on the green checkmark button.
+Enter a group subject and tap on the green checkmark button.
+Tap on the "Create" button.
+Expected Results:
+The new group should be created successfully and users should be able to start chatting in the group.
+Actual Results:
+After tapping on the "Create" button, the process fails and displays an error message. The message states "Failed to create group. Please try again later."
+
+4. Write a few testcases for booking tickers in redbus.
+
+1.Verify that a user is able to successfully search for bus tickets by providing the correct source, destination, and travel dates.
+2.Verify that the search results are displayed correctly with details such as the bus operator, departure time, duration, and fare.
+3.Verify that a user is able to select a bus from the search results and proceed to the next step.
+4.Verify that the user is able to select the desired seats on the bus and proceed to the next step.
+5.Verify that the user is able to provide the required passenger details such as name, age, gender, and contact information.
+6.Verify that the user is able to select a payment method and make the payment for the ticket.
+7.Verify that the user is able to receive a confirmation of the ticket booking, including the ticket details and the booking reference number.
+8.Verify that the user is able to view and download the ticket from the app or website.
+9.Verify that the user is able to cancel a booked ticket and receive the refund amount as per the cancellation policy.
+10.Verify that the user is able to view the booking history and upcoming trips.
+
+5. Write a bug report for profile picture not updated in whatsapp.
+
+Status: New/Open
+Severity:
+This is a critical severity.
+Priority:
+This is a high priority.
+Test Environment:
+This issue was observed on Google Chrome
+Detailed Description:
+Open WhatsApp and go to the Settings menu.
+Tap on the "Profile" option.
+Tap on the "Edit" button next to the profile picture.
+Select a new picture from the gallery or take a new one using the camera.
+Adjust the picture and tap on the "Save" button.
+Expected Results:
+The new profile picture should be updated and displayed in the user's profile and in all chat conversations.
+Actual Results:
+After tapping on the "Save" button, the new profile picture fails to update and the old picture remains unchanged. Even after restarting the app, the new picture is not reflected.
+
+6. Write a Bug Report for a bug in the Amazon website that is preventing users from adding Electronic items in the cart.
+
+Status: New/Open
+Severity:
+This is a critical severity.
+Priority:
+This is a high priority.
+Test Environment:
+This issue was observed on Google Chrome
+Detailed Description:
+Open the Amazon website and navigate to the Electronic items category.
+Select an Electronic item to purchase and click on the "Add to Cart" button.
+Observe that the item is not added to the cart and no error message is displayed.
+Expected Results:
+The selected Electronic item should be added to the cart and the user should be able to proceed to checkout.
+Actual Results:
+After clicking on the "Add to Cart" button, the selected Electronic item fails to add to the cart and the cart remains empty. The user is unable to proceed to checkout.
+
+7. Write any 5 Negative testcases
+
+1.Login with an invalid username and password should not grant access to the system.
+2.Trying to withdraw an amount greater than the account balance should result in an error message.
+3.Submitting a form with incomplete mandatory fields should not allow the submission and show an error message.
+4.Providing an invalid input to a function that expects a specific data type should result in a type error.
+5.Attempting to upload a file with an unsupported file format should result in an error message and prevent the upload.
 
 
------------------------------------------------------------------------------------------------------------
-
-
-2.Write a few testcases for booking tickers in redbus.
-
-Verify that the user is able to successfully login to their account.
-Verify that the user is able to search for bus routes and select a desired route.
-Verify that the user is able to view the list of available buses for the selected route.
-Verify that the user is able to view the details of each bus, such as the fare, bus type, boarding points, and amenities.
-Verify that the user is able to select the desired bus and seat(s).
-Verify that the user is able to enter the passenger details, such as name, age, and gender.
-Verify that the user is able to select the desired payment method and enter the payment details.
-Verify that the user is able to review the booking details and confirm the booking.
-Verify that the user is able to receive a booking confirmation with the ticket details via email or SMS.
-Verify that the user is able to cancel the booking and receive a refund as per the cancellation policy.
-
--------------------------------------------------------------------------------------------------------------
 8.Write a few test cases for the IRCTC Web Application.
 
-Verify that the user is able to log in with valid credentials and is directed to the dashboard page.
-Verify that the user is not able to log in with invalid credentials and is prompted with an error message.
-Verify that the user is able to search for trains by entering the source and destination stations, date, and class of travel.
-Verify that the user is able to select a train from the search results and is directed to the seat selection page.
-Verify that the user is able to select a seat from the available options and is directed to the passenger details page.
-Verify that the user is able to enter the passenger details and is directed to the payment page.
-Verify that the user is able to make payment using different payment methods such as credit/debit card, net banking, or e-wallet.
-Verify that the user is able to view their booking history and cancel a booking if required.
-Verify that the user is able to access the help and support section to get information on different topics such as booking policies, train schedules, or refunds.
-Verify that the user is able to logout successfully and is directed to the login page.
+Test case for Login functionality:
+1.	Verify that the user is able to login with valid credentials.
+2.	Verify that the user is not able to login with invalid credentials.
+3.	Verify that the user is redirected to the correct page after successful login.
+Test case for Train search functionality:
+1.	Verify that the user is able to search for trains using valid source and destination stations.
+2.	Verify that the user is not able to search for trains with invalid source and destination stations.
+3.	Verify that the user is able to select the correct train from the search results.
+Test case for Ticket booking functionality:
+1.	Verify that the user is able to book a ticket for a selected train.
+2.	Verify that the user is not able to book a ticket if the selected train is not available.
+3.	Verify that the user is not able to book a ticket if the selected quota is not available.
+Test case for Payment functionality:
+1.	Verify that the user is able to make a payment using a valid payment method.
+2.	Verify that the user is not able to make a payment if the payment method is invalid or not available.
+3.	Verify that the user receives a confirmation message after a successful payment.
+Test case for Cancellation functionality:
+1.	Verify that the user is able to cancel a ticket within the specified time limit.
+2.	Verify that the user is not able to cancel a ticket after the specified time limit.
+3.	Verify that the user receives a refund after a successful cancellation.
+Test case for Security functionality:
+1.	Verify that the user's personal and payment information is kept secure.
+2.	Verify that the user is logged out after a certain period of inactivity.
+3.	Verify that the user's session is terminated after logging out.
+
 
 9.Write a few test cases for the SpiceJet Web Application.
-verify that the user is able to login  with valid credentials and open the page.
-verify that the user is not able to login with invalid credentials and is promted with an error message.
-verify that the user is able to search for spicejet by entering source and destination stations, date,and class ,travel.
-verify that the user is able to select a seat from the available options and is directed to the passenger details page.
-verify that the user is able to make sure the payment using different options such as upi credit card net banking.
-verify that the user is able to make sure that the access the hlp and support section to ger information on different topics such as booking policies.
-verify that the user is abl to logout successfully and is directed to the loging page.
+
+Test case for Login functionality:
+1.	Verify that the user is able to login with valid credentials.
+2.	Verify that the user is not able to login with invalid credentials.
+3.	Verify that the user is redirected to the correct page after successful login.
+Test case for Flight search functionality:
+1.	Verify that the user is able to search for flights using valid source and destination airports.
+2.	Verify that the user is not able to search for flights with invalid source and destination airports.
+3.	Verify that the user is able to select the correct flight from the search results.
+Test case for Booking functionality:
+1.	Verify that the user is able to book a flight for a selected date and time.
+2.	Verify that the user is not able to book a flight if the selected flight is not available.
+3.	Verify that the user is able to select a seat and add any additional services during the booking process.
+Test case for Payment functionality:
+1.	Verify that the user is able to make a payment using a valid payment method.
+2.	Verify that the user is not able to make a payment if the payment method is invalid or not available.
+3.	Verify that the user receives a confirmation message after a successful payment.
+Test case for Cancelation functionality:
+1.	Verify that the user is able to cancel a flight within the specified time limit.
+2.	Verify that the user is not able to cancel a flight after the specified time limit.
+3.	Verify that the user receives a refund after a successful cancellation.
+Test case for Security functionality:
+1.	Verify that the user's personal and payment information is kept secure.
+2.	Verify that the user is logged out after a certain period of inactivity.
+3.	Verify that the user's session is terminated after logging out.
+Test case for Promotions functionality:
+1.	Verify that the user is able to apply a valid promotion code during the booking process.
+2.	Verify that the user is not able to apply an invalid or expired promotion code.
+3.	Verify that the correct discount is applied to the booking after a successful promotion
+4.	code application.
+
+10.Create 10 test case for amazon Website view
+
+Test case 1: Verify that the Amazon homepage loads correctly and all images and links are displayed properly.
+Test case 2: Verify that the search functionality is working properly and returns relevant results.
+Test case 3: Verify that the product details page displays accurate and complete information about the product.
+Test case 4: Verify that the add to cart functionality is working properly and items are added to the cart.
+Test case 5: Verify that the checkout process is smooth and all required fields are properly validated before submission.
+Test case 6: Verify that the order history page displays accurate and complete information about past orders.
+Test case 7: Verify that the wishlist functionality is working properly and items can be added, removed and viewed.
+Test case 8: Verify that the ratings and reviews section is functional and displays relevant information.
+Test case 9: Verify that the account settings page is accessible and all settings can be modified successfully.
+           Test case 10: Verify that the customer support page provides proper assistance and all  
+           links are working properly.
+
+11.Create 10 test cases for amazon mobile view
+Test case 1: Verify that the Amazon mobile app loads correctly and all images and links are displayed properly.
+Test case 2: Verify that the search functionality is working properly and returns relevant results on the mobile app.
+Test case 3: Verify that the product details page displays accurate and complete information about the product on the mobile app.
+Test case 4: Verify that the add to cart functionality is working properly and items are added to the cart on the mobile app.
+Test case 5: Verify that the checkout process is smooth and all required fields are properly validated before submission on the mobile app.
+Test case  6: Verify that the order history page displays accurate and complete information about past orders on the mobile app.
+Test case 7: Verify that the wishlist functionality is working properly and items can be added, removed and viewed on the mobile app.
+Test case 8: Verify that the ratings and reviews section is functional and displays relevant information on the mobile app.
+Test case 9: Verify that the account settings page is accessible and all settings can be modified successfully on the mobile app.
+            Test case 10: Verify that the customer support page provides proper assistance and all  
+            links 
+            are working properly on the mobile app.
