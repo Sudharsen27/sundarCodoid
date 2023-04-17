@@ -1,0 +1,76 @@
+9)Write code for taking Screenshot
+from selenium import webdriver
+
+# create a new instance of the Chrome driver
+driver = webdriver.Chrome()
+
+# navigate to the desired web page
+driver.get("https://www.example.com")
+
+# take a screenshot and save it to a file
+driver.save_screenshot("screenshot.png")
+
+# close the browser window
+driver.quit()
+
+------------------------------------------------------------------------------------------------------------------------
+
+2)Write code for positive and negative scenarios for Alerts
+
+from selenium import webdriver
+from selenium.webdriver.common.alert import Alert
+
+# create a new instance of the Chrome driver
+driver = webdriver.Chrome()
+
+# navigate to the desired web page
+driver.get("https://www.example.com")
+
+# find the button that triggers the alert
+alert_button = driver.find_element_by_id("alert-button")
+
+# click on the button to trigger the alert
+alert_button.click()
+
+# switch to the alert window
+alert = Alert(driver)
+
+# get the text of the alert message
+alert_text = aler
+
+-----------------------------------------------------------------------------------------------------------------------
+6)Select multiple options from the dropdown
+
+from selenium import webdriver
+from selenium.webdriver.support.ui import Select
+
+# create a new instance of the Chrome driver
+driver = webdriver.Chrome()
+
+# navigate to the desired web page
+driver.get("https://www.example.com")
+
+# find the dropdown element
+dropdown = Select(driver.find_element_by_id("my-dropdown"))
+
+# select multiple options from the dropdown
+dropdown.select_by_value("option1")
+dropdown.select_by_value("option3")
+
+# get the selected options from the dropdown
+selected_options = d
+--------------------------------------------------------------------------------------------------------------------
+1.Write code for handling multiple windows
+public class childWindow {
+    public static void main(String[] args) throws InterruptedException {
+        System.setProperty("webdriver.chrome.driver","./src/resources/chromedriver");
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.get("https://demoqa.com/browser-windows");
+         driver.findElement(By.id("windowButton")).click();
+         WebElement text = driver.findElement(By.id("sampleHeading"));     
+         System.out.println("Element found using text: " + text.getText());
+         driver.quit();
+    }
+}
+----------------------------------------------------------------------------------------------------------------------

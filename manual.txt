@@ -1,0 +1,83 @@
+1."Write a Bug Report for a bug in the Whatsapp mobile application that is preventing users from sending video files in group chats.
+ (Note: Consider that this workflow is working fine in private chat)"
+Test Case: Sending Video Files in Group Chats
+
+Test Objective: To verify if users can send video files in group chats without any issues.
+
+Pre-conditions:
+
+The user must have an active account on WhatsApp
+The user must be a member of a group chat
+The user must have access to a video file on their device
+Steps:
+
+Launch the WhatsApp mobile application.
+Navigate to the group chat where you want to send the video file.
+Tap on the attachment icon to open the options for attaching a file.
+Select the video file from the device storage.
+Tap on the send button to send the video file.
+Expected Results:
+
+The video file should be uploaded and sent successfully to the group chat.
+All members of the group chat should be able to view the video file.
+The video file should play without any issues.
+Actual Results:
+
+The video file is not uploaded and the user is unable to send it to the group chat.
+An error message is displayed on the screen indicating that the upload has failed.
+Test Result:
+
+Fail
+Severity: High
+
+Priority: High
+
+Test Environment:
+
+WhatsApp Mobile Application version X.X.X
+Android/iOS version X.X
+Notes:
+
+The same workflow works fine in private chat, but not in group chats.
+The issue persists even after multiple attempts.
+The issue has been reproduced on different devices and operating systems.
+
+
+-----------------------------------------------------------------------------------------------------------
+
+
+2.Write a few testcases for booking tickers in redbus.
+
+Verify that the user is able to successfully login to their account.
+Verify that the user is able to search for bus routes and select a desired route.
+Verify that the user is able to view the list of available buses for the selected route.
+Verify that the user is able to view the details of each bus, such as the fare, bus type, boarding points, and amenities.
+Verify that the user is able to select the desired bus and seat(s).
+Verify that the user is able to enter the passenger details, such as name, age, and gender.
+Verify that the user is able to select the desired payment method and enter the payment details.
+Verify that the user is able to review the booking details and confirm the booking.
+Verify that the user is able to receive a booking confirmation with the ticket details via email or SMS.
+Verify that the user is able to cancel the booking and receive a refund as per the cancellation policy.
+
+-------------------------------------------------------------------------------------------------------------
+8.Write a few test cases for the IRCTC Web Application.
+
+Verify that the user is able to log in with valid credentials and is directed to the dashboard page.
+Verify that the user is not able to log in with invalid credentials and is prompted with an error message.
+Verify that the user is able to search for trains by entering the source and destination stations, date, and class of travel.
+Verify that the user is able to select a train from the search results and is directed to the seat selection page.
+Verify that the user is able to select a seat from the available options and is directed to the passenger details page.
+Verify that the user is able to enter the passenger details and is directed to the payment page.
+Verify that the user is able to make payment using different payment methods such as credit/debit card, net banking, or e-wallet.
+Verify that the user is able to view their booking history and cancel a booking if required.
+Verify that the user is able to access the help and support section to get information on different topics such as booking policies, train schedules, or refunds.
+Verify that the user is able to logout successfully and is directed to the login page.
+
+9.Write a few test cases for the SpiceJet Web Application.
+verify that the user is able to login  with valid credentials and open the page.
+verify that the user is not able to login with invalid credentials and is promted with an error message.
+verify that the user is able to search for spicejet by entering source and destination stations, date,and class ,travel.
+verify that the user is able to select a seat from the available options and is directed to the passenger details page.
+verify that the user is able to make sure the payment using different options such as upi credit card net banking.
+verify that the user is able to make sure that the access the hlp and support section to ger information on different topics such as booking policies.
+verify that the user is abl to logout successfully and is directed to the loging page.

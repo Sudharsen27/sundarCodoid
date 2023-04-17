@@ -1,0 +1,93 @@
+12)public class Pattern {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 6; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+Output:
+*
+**
+***
+****
+*****
+******
+
+
+----------------------------------------------------------------------------------------------------------------------
+
+
+11)How to convert string to date in java in yyyy-mm-dd format?
+public class String To Date {
+    public static void main(String[] args) throws Exception {
+        String dateString = "2023-04-17";
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = dateFormat.parse(dateString);
+        System.out.println(date);
+    }
+}
+
+output:
+2023-04-17
+
+---------------------------------------------------------------------------------------------------------------------
+
+16)How to sort array in java?
+
+
+public class ArraySortExample {
+  public static void main(String[] args) {
+    int[] arr = {5, 2, 8, 3, 1, 9, 4};
+    
+    // Sort the array in ascending order
+    Arrays.sort(arr);
+    
+    // Print the sorted array
+    System.out.println(Arrays.toString(arr));
+  }
+} 
+
+
+output:
+[1, 2, 3, 4, 5, 8, 9]
+-----------------------------------------------------------------------------------------------------------------------
+2	How do we reverse a string?
+
+class revstr {
+	public static void main (String[] args) {
+	
+		String str= "sundar";
+		nstr="";
+		char ch;
+	for (int i=0; i<str.length(); i++)
+	{
+		ch= str.charAt(i); 
+		nstr= ch+nstr; 
+	}
+	System.out.println("Reversed word: "+ nstr);
+	}
+}
+output:
+radnus
+----------------------------------------------------------------------------------------------------------------------
+14.How to remove special characters from a string in java?
+public class StringReplacement 
+{
+    public static void main(String[] args)
+	{
+        String s = "Hello?@Friends, how, are ^you";
+        String newString=s.replaceAll("[?@,^]*", "");
+        System.out.println("new string :"+newString);   
+    }
+}
+output:
+Hello Friends how are you
+----------------------------------------------------------------------------------------------------------------------
+
+
+
+

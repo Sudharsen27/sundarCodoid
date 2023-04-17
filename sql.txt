@@ -1,0 +1,52 @@
+1.What are Scalar functions and write a query?
+Some of the commonly used scalar functions in SQL includes:
+
+UCASE()-SELECT UCASE (ColumnName) FROM TableName;
+LCASE()-SELECT LCASE ("WELCOME TO SQL") AS LowerCase_String; 
+MID()-SELECT MID (string, start, length)
+LENGTH()-SELECT LENGTH (String);
+ROUND()-SELECT ROUND (NumericValue, Decimals); 
+NOW()-SELECT NOW () FROM TableName;  
+FORMAT()-SELECT FORMAT (Value, Decimal); 
+---------------------------------------------------------------------------------------------------------------- 
+
+3.Write a SQL query to Rename the column name.
+ALTER TABLE my_table RENAME COLUMN old_column_name TO new_column_name;
+
+-----------------------------------------------------------------------------------------------------------------
+
+4.Write a SQL query to find duplicate records
+SELECT column1, column2, COUNT(*) as count
+FROM my_table
+GROUP BY column1, column2
+HAVING COUNT(*) > 1;
+
+----------------------------------------------------------------------------------------------------------------
+
+5.How do we use the DISTINCT statement? What are its use?
+SELECT DISTINCT column_name
+FROM table_name;
+
+The DISTINCT statement is useful when you want to remove duplicates from your query results. For example, if you have a table of customer orders and you want to know how many unique customers have placed orders, you can use the DISTINCT statement to retrieve only the unique customer IDs.
+
+One thing to keep in mind is that the DISTINCT statement can impact performance if used on large datasets or complex queries. It requires the database to perform additional processing to remove duplicates, which can slow down the query. As a best practice, you should only use DISTINCT when necessary and avoid using it unnecessarily.
+--------------------------------------------------------------------------------------------------------------------
+8.Use different operators in SQL 
++	
+The addition is used to perform an addition operation on the data values.
+
+–	
+This operator is used for the subtraction of the data values.
+
+/	
+This operator works with the ‘ALL’ keyword and it calculates division operations.
+
+*	
+This operator is used for multiplying data values.
+
+%	
+Modulus is used to get the remainder when data is divided by another.
+
+SELECT * FROM employee WHERE emp_city NOT LIKE 'A%
+
+--------------------------------------------------------------------------------------------------------------------
